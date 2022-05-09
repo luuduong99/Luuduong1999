@@ -28,7 +28,6 @@ class AddMutipleColumnToItems extends Migration
     public function down()
     {
         Schema::table('items', function (Blueprint $table) {
-            //
             $table->dropColumn('name', 'description');
             $table->dropSoftDeletes();
         });

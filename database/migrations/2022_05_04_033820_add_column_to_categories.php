@@ -26,7 +26,6 @@ class AddColumnToCategories extends Migration
     public function down()
     {
         Schema::table('categories', function (Blueprint $table) {
-            //
             $table->DropSoftDeletes();
         });
     }
